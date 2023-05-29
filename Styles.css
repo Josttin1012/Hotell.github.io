@@ -1,0 +1,175 @@
+/* Estilos generales del navbar */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.logo img {
+  max-width: 80px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+/* Estilos específicos para el navbar del hotel */
+.logo a {
+  display: inline-block;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+/* Estilo de la sección de presentación */
+.presentacion {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.presentacion img {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
+  margin-right: 50px;
+}
+
+.presentacion div {
+  flex: 1;
+}
+
+.presentacion h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.presentacion p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.presentacion a {
+  background-color: #ff6600;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.presentacion a:hover {
+  background-color: #e65c00;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 0 0 calc(33.33% - 40px);
+  margin-bottom: 20px;
+}
+
+.footer-column:last-child {
+  flex-grow: 1;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.dev-info ul,
+.contact-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dev-info h2,
+.contact-info h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info li a {
+  color: #fff;
+}
+
+.contact-info li i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-container .contact-info ul li a:hover {
+  color: #ff6600;
+}
+
+/* Estilos para 1920x1080px */
+@media screen and (min-width: 1441px) and (min-height: 901px) {
+  .header-container {
+    padding: 30px;
+  }
+
+  .presentacion {
+    padding: 70px;
+  }
+
+  .presentacion img {
+    margin-right: 70px;
+  }
+}
+
